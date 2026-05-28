@@ -1,6 +1,5 @@
 # clinical-skill-architecture
 
-[![PyPI](https://img.shields.io/pypi/v/clinical-skill-architecture.svg)](https://pypi.org/project/clinical-skill-architecture/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)](pyproject.toml)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kikolo3000/clinical-skill-architecture/blob/main/notebooks/01_quickstart.ipynb)
