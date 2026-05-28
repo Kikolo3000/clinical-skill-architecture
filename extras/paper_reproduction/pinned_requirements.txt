@@ -1,0 +1,10 @@
+# Pinned dependency versions used to produce the npj Digital Medicine results.
+# Do not relax these without rerunning the full validation suite.
+
+openai==1.45.0
+python-dotenv==1.0.1
+anthropic==0.39.0
+
+# For evaluation only
+scipy==1.13.1
+numpy==1.26.4

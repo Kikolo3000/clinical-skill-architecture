@@ -1,0 +1,1861 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-03-14T13:58:08.988009",
+  "total_instances": 150,
+  "total_tp_clauses": 345,
+  "total_distractor_clauses": 283,
+  "total_coding_decisions": 628,
+  "sub_item_coverage": [
+    "DAM.A.a",
+    "DAM.A.b",
+    "DAM.A.c",
+    "DAM.A.d",
+    "DAM.B.a",
+    "DAM.B.b",
+    "DAM.B.c",
+    "DAM.B.d",
+    "HOP.1",
+    "HOP.2a",
+    "HOP.2b",
+    "HOP.3a",
+    "HOP.3b",
+    "HOS.A.a1",
+    "HOS.A.a2",
+    "HOS.A.a3",
+    "HOS.A.b1",
+    "HOS.A.b2",
+    "HOS.A.b3",
+    "HOS.A.c1",
+    "HOS.A.c2",
+    "HOS.A.c3",
+    "HOS.A.d",
+    "HOS.B.a1",
+    "HOS.B.a2",
+    "HOS.B.a3",
+    "HOS.B.b1",
+    "HOS.B.b2",
+    "HOS.B.b3",
+    "HOS.B.c1",
+    "HOS.B.c2",
+    "HOS.B.c3",
+    "HOS.B.d",
+    "HOS.B.d3",
+    "HOS.B.e",
+    "HOS.B.e3",
+    "HOS.B.f",
+    "HOS.B.f3",
+    "PMR.1",
+    "SAC.A.a",
+    "SAC.A.b",
+    "SAC.A.c",
+    "SAC.B.a",
+    "SAC.B.b",
+    "SAC.B.c",
+    "SAC.C.a",
+    "SAC.C.a2",
+    "SAC.C.a3",
+    "SAC.C.a4",
+    "SAC.C.b",
+    "SAC.C.b2",
+    "SAC.C.b3",
+    "SAC.C.b4",
+    "SAC.C.c",
+    "SAC.C.c2",
+    "SEP.a",
+    "SEP.b",
+    "SEP.c",
+    "SEP.d",
+    "SOM.A",
+    "SOM.B",
+    "SOM.C",
+    "SOM.D",
+    "SOM.E"
+  ],
+  "sub_item_count": 64,
+  "instances": [
+    {
+      "id": "SYN_001_PURE_EASY_HOP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_002_PURE_EASY_HOP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_003_PURE_EASY_HOP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_004_PURE_EASY_HOP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_005_PURE_MOD_HOP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_006_PURE_MOD_HOP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_007_PURE_MOD_HOP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_008_PURE_HARD_HOP",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_009_PURE_EASY_SAC",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_010_PURE_EASY_SAC",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_011_PURE_EASY_SAC",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_012_PURE_EASY_SAC",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_013_PURE_MOD_SAC",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_014_PURE_MOD_SAC",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_015_PURE_MOD_SAC",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_016_PURE_HARD_SAC",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_017_PURE_HARD_SAC",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_018_PURE_ADV_SAC",
+      "type": "PURE",
+      "difficulty": "ADV",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_019_PURE_EASY_PMR",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_020_PURE_EASY_PMR",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_021_PURE_MOD_PMR",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_022_PURE_MOD_PMR",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_023_PURE_HARD_PMR",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_024_PURE_ADV_PMR",
+      "type": "PURE",
+      "difficulty": "ADV",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_025_PURE_EASY_SOM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_026_PURE_EASY_SOM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_027_PURE_EASY_SOM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_028_PURE_MOD_SOM",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_029_PURE_MOD_SOM",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_030_PURE_HARD_SOM",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_031_PURE_EASY_DAM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_032_PURE_EASY_DAM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_033_PURE_EASY_DAM",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_034_PURE_MOD_DAM",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_035_PURE_MOD_DAM",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_036_PURE_MOD_DAM",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_037_PURE_HARD_DAM",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_038_PURE_ADV_DAM",
+      "type": "PURE",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_039_PURE_EASY_SEP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_040_PURE_EASY_SEP",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_041_PURE_MOD_SEP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_042_PURE_MOD_SEP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_043_PURE_MOD_SEP",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_044_PURE_HARD_SEP",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_045_PURE_EASY_HOS",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_046_PURE_EASY_HOS",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_047_PURE_EASY_HOS",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_048_PURE_EASY_HOS",
+      "type": "PURE",
+      "difficulty": "EASY",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_049_PURE_MOD_HOS",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_050_PURE_MOD_HOS",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_051_PURE_MOD_HOS",
+      "type": "PURE",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_052_PURE_HARD_HOS",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_053_PURE_HARD_HOS",
+      "type": "PURE",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 6,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_054_PURE_ADV_HOS",
+      "type": "PURE",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_055_MULTI_EASY_HOP-SEP",
+      "type": "MULTI",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP-SEP",
+      "subscales": [
+        "HOP",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_056_MULTI_EASY_HOP-SEP",
+      "type": "MULTI",
+      "difficulty": "EASY",
+      "primary_subscale": "HOP-SEP",
+      "subscales": [
+        "HOP",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_057_MULTI_MOD_HOP-SEP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP-SEP",
+      "subscales": [
+        "HOP",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_058_MULTI_HARD_HOP-SEP",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "HOP-SEP",
+      "subscales": [
+        "HOP",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_059_MULTI_ADV_HOP-SEP",
+      "type": "MULTI",
+      "difficulty": "ADV",
+      "primary_subscale": "HOP-SEP",
+      "subscales": [
+        "HOP",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_060_MULTI_MOD_SAC-SEP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC-SEP",
+      "subscales": [
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_061_MULTI_MOD_SAC-SEP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC-SEP",
+      "subscales": [
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_062_MULTI_HARD_SAC-SEP",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC-SEP",
+      "subscales": [
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_063_MULTI_MOD_DAM-SEP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_064_MULTI_MOD_DAM-SEP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_065_MULTI_HARD_DAM-SEP",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_066_MULTI_MOD_SOM-PMR",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SOM-PMR",
+      "subscales": [
+        "PMR",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_067_MULTI_MOD_SOM-PMR",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SOM-PMR",
+      "subscales": [
+        "PMR",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_068_MULTI_HARD_SOM-PMR",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "SOM-PMR",
+      "subscales": [
+        "PMR",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_069_MULTI_MOD_HOS-DAM",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_070_MULTI_MOD_HOS-DAM",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_071_MULTI_HARD_HOS-DAM",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_072_MULTI_MOD_SAC-HOP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_073_MULTI_MOD_SAC-HOP",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_074_MULTI_HARD_SAC-HOP",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_075_MULTI_MOD_SOM-HOS",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "SOM-HOS",
+      "subscales": [
+        "HOS",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_076_MULTI_HARD_SOM-HOS",
+      "type": "MULTI",
+      "difficulty": "HARD",
+      "primary_subscale": "SOM-HOS",
+      "subscales": [
+        "HOS",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_077_MULTI_MOD_HOP-SOM",
+      "type": "MULTI",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP-SOM",
+      "subscales": [
+        "HOP",
+        "SOM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_078_MULTI_ADV_DAM-HOS-SEP",
+      "type": "MULTI",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM-HOS-SEP",
+      "subscales": [
+        "DAM",
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_079_MULTI_ADV_HOS-SEP",
+      "type": "MULTI",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS-SEP",
+      "subscales": [
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_080_MCODE_HARD_DAM-SEP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_081_MCODE_HARD_DAM-SEP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_082_MCODE_HARD_HOS-DAM",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_083_MCODE_ADV_HOS-DAM",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_084_MCODE_HARD_SAC-SEP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC-SEP",
+      "subscales": [
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_085_MCODE_HARD_SAC-SEP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC-SEP",
+      "subscales": [
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_086_MCODE_HARD_SAC-HOP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_087_MCODE_ADV_SAC-HOP",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 5,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_088_MCODE_HARD_HOS-SEP",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS-SEP",
+      "subscales": [
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_089_MCODE_ADV_HOS-SEP",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS-SEP",
+      "subscales": [
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_090_MCODE_HARD_SOM-PMR",
+      "type": "MCODE",
+      "difficulty": "HARD",
+      "primary_subscale": "SOM-PMR",
+      "subscales": [
+        "PMR",
+        "SOM"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_091_MCODE_ADV_DAM-HOS-SEP",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM-HOS-SEP",
+      "subscales": [
+        "DAM",
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 5,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_092_MCODE_ADV_DAM-HOS-SEP",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM-HOS-SEP",
+      "subscales": [
+        "DAM",
+        "HOS",
+        "SEP"
+      ],
+      "n_codings": 5,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_093_MCODE_ADV_SAC-HOP",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "SAC-HOP",
+      "subscales": [
+        "HOP",
+        "SAC"
+      ],
+      "n_codings": 5,
+      "n_distractors": 2,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_094_MCODE_ADV_HOS-DAM",
+      "type": "MCODE",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS-DAM",
+      "subscales": [
+        "DAM",
+        "HOS"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_095_DIST_MOD_HOP",
+      "type": "DIST",
+      "difficulty": "MOD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_096_DIST_MOD_SAC",
+      "type": "DIST",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_097_DIST_MOD_SEP",
+      "type": "DIST",
+      "difficulty": "MOD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_098_DIST_MOD_DAM",
+      "type": "DIST",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_099_DIST_MOD_HOS",
+      "type": "DIST",
+      "difficulty": "MOD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_100_DIST_HARD_HOP",
+      "type": "DIST",
+      "difficulty": "HARD",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_101_DIST_HARD_SAC",
+      "type": "DIST",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 5,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_102_DIST_HARD_SOM",
+      "type": "DIST",
+      "difficulty": "HARD",
+      "primary_subscale": "SOM",
+      "subscales": [
+        "SOM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_103_DIST_HARD_HOS",
+      "type": "DIST",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_104_DIST_HARD_PMR",
+      "type": "DIST",
+      "difficulty": "HARD",
+      "primary_subscale": "PMR",
+      "subscales": [
+        "PMR"
+      ],
+      "n_codings": 2,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_105_DIST_ADV_NULL",
+      "type": "DIST",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 5,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_106_DIST_ADV_HOP",
+      "type": "DIST",
+      "difficulty": "ADV",
+      "primary_subscale": "HOP",
+      "subscales": [
+        "HOP"
+      ],
+      "n_codings": 1,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_107_DIST_ADV_DAM",
+      "type": "DIST",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 4,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_108_DIST_ADV_SAC",
+      "type": "DIST",
+      "difficulty": "ADV",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_109_DIST_ADV_HOS",
+      "type": "DIST",
+      "difficulty": "ADV",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 2,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_110_DENY_MOD_SAC",
+      "type": "DENY",
+      "difficulty": "MOD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_111_DENY_MOD_DAM",
+      "type": "DENY",
+      "difficulty": "MOD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_112_DENY_MOD_SEP",
+      "type": "DENY",
+      "difficulty": "MOD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_113_DENY_HARD_HOS",
+      "type": "DENY",
+      "difficulty": "HARD",
+      "primary_subscale": "HOS",
+      "subscales": [
+        "HOS"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_114_DENY_HARD_SAC",
+      "type": "DENY",
+      "difficulty": "HARD",
+      "primary_subscale": "SAC",
+      "subscales": [
+        "SAC"
+      ],
+      "n_codings": 2,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_115_DENY_HARD_DAM",
+      "type": "DENY",
+      "difficulty": "HARD",
+      "primary_subscale": "DAM",
+      "subscales": [
+        "DAM"
+      ],
+      "n_codings": 3,
+      "n_distractors": 0,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_116_DENY_HARD_SEP",
+      "type": "DENY",
+      "difficulty": "HARD",
+      "primary_subscale": "SEP",
+      "subscales": [
+        "SEP"
+      ],
+      "n_codings": 3,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_117_DENY_ADV_MIXED",
+      "type": "DENY",
+      "difficulty": "ADV",
+      "primary_subscale": "MIXED",
+      "subscales": [
+        "DAM",
+        "HOS",
+        "SAC",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_118_DENY_ADV_SAC-HOS",
+      "type": "DENY",
+      "difficulty": "ADV",
+      "primary_subscale": "SAC-HOS",
+      "subscales": [
+        "HOS",
+        "SAC"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_119_DENY_ADV_DAM-SEP",
+      "type": "DENY",
+      "difficulty": "ADV",
+      "primary_subscale": "DAM-SEP",
+      "subscales": [
+        "DAM",
+        "SEP"
+      ],
+      "n_codings": 4,
+      "n_distractors": 1,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_120_NEG_EASY_NULL",
+      "type": "NEG",
+      "difficulty": "EASY",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_121_NEG_EASY_NULL",
+      "type": "NEG",
+      "difficulty": "EASY",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_122_NEG_EASY_NULL",
+      "type": "NEG",
+      "difficulty": "EASY",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_123_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_124_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_125_NEG_EASY_NULL",
+      "type": "NEG",
+      "difficulty": "EASY",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_126_NEG_EASY_NULL",
+      "type": "NEG",
+      "difficulty": "EASY",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_127_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_128_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_129_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_130_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_131_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_132_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_133_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_134_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_135_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_136_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_137_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_138_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_139_NEG_MOD_NULL",
+      "type": "NEG",
+      "difficulty": "MOD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_140_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_141_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_142_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_143_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_144_NEG_HARD_NULL",
+      "type": "NEG",
+      "difficulty": "HARD",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_145_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_146_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_147_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_148_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_149_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    },
+    {
+      "id": "SYN_150_NEG_ADV_NULL",
+      "type": "NEG",
+      "difficulty": "ADV",
+      "primary_subscale": "NULL",
+      "subscales": [],
+      "n_codings": 0,
+      "n_distractors": 3,
+      "n_turns": 2
+    }
+  ]
+}

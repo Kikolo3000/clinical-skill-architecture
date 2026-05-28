@@ -1,0 +1,104 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "clinical-skill-architecture"
+version = "0.1.0"
+description = "A framework for translating clinical rating-scale ontologies into LLM-driven coding agents. v0.1 ships with the Gottschalk-Gleser depression scale."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Enrique Gutiérrez", email = "eguti90@mit.edu" },
+    { name = "Yuhan Zhang" },
+    { name = "José-Blas Navarro" },
+    { name = "Ana Barajas" },
+]
+keywords = [
+    "clinical-nlp",
+    "llm-agents",
+    "rating-scales",
+    "ambient-phenotyping",
+    "computational-psychiatry",
+    "mental-health",
+    "depression",
+    "gottschalk-gleser",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "anthropic>=0.40",
+    "openai>=1.40",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+eval = [
+    "scipy>=1.10",
+    "numpy>=1.24",
+]
+viz = [
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+csa-score = "csa.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Kikolo3000/clinical-skill-architecture"
+Documentation = "https://github.com/Kikolo3000/clinical-skill-architecture#readme"
+Repository = "https://github.com/Kikolo3000/clinical-skill-architecture"
+Issues = "https://github.com/Kikolo3000/clinical-skill-architecture/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/csa"]
+include = [
+    "src/csa/**/*.py",
+    "src/csa/**/*.md",
+    "src/csa/**/*.json",
+    "src/csa/**/*.jsonl",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/csa",
+    "tests",
+    "notebooks",
+    "synthetic",
+    "docs",
+    "extras",
+    "README.md",
+    "LICENSE",
+    "DISCLAIMER.md",
+    "MODEL_CARD.md",
+    "CITATION.cff",
+    "CHANGELOG.md",
+    "pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live: tests that hit a real LLM API (require ANTHROPIC_API_KEY); skipped in normal CI",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

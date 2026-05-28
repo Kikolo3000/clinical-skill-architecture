@@ -1,0 +1,2 @@
+I: how's your week been
+S: pretty normal i went to the store got some groceries the weather was nice i walked the dog and then at night i just thought nothing is ever going to work out for me but besides that fine really just had spaghetti for dinner

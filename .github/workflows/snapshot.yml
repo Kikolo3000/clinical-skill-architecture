@@ -1,0 +1,29 @@
+name: Snapshot (live API)
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"        # weekly, Monday 06:00 UTC
+  workflow_dispatch:           # manual trigger
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'Kikolo3000'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[eval]"
+
+      - name: Score the 3 demo instances against the live Anthropic API
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m csa.cli --demo

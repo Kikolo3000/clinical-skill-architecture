@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local runs
+.gg_cache/
+*.log
+
+# Synthetic suite — generated on demand, not tracked
+synthetic/instances/
+synthetic/results/
