@@ -234,6 +234,14 @@ Three sources, used together:
 3. **LLM-generated synthetic dialogue** — once you have ~10 seed examples per construct, an LLM can extrapolate hundreds more. Always review by hand before committing them as ground truth.
 4. **Your own clinical experience** — the most pedagogically valuable distractors usually come from cases that fooled you the first time.
 
+> ⚠️ **Keep the test set independent of the skill files.** Sources 1 and 3 are exactly where independence is lost: an example you lifted into a skill file, or an LLM extrapolating from seed examples it was shown, can reappear as a test clause. Your agent then gets credit for recognising your own authored examples rather than for generalising. We hit this in the published G-G suite — a peer reviewer found that 73 of 345 ground-truth clauses reproduced a skill-file example — and it is the reason this package ships [`synthetic/independence_gate.py`](synthetic/independence_gate.py). Run it over your instance definitions before you evaluate anything:
+>
+> ```bash
+> python synthetic/independence_gate.py --strict   # non-zero exit if any clause reproduces an example
+> ```
+>
+> It rejects a clause that reaches a character sequence ratio of 0.7 with, or shares a five-token phrase with, any quoted example in your skill files. `generate_all.py --strict` enforces the same rule at generation time. Note what the gate does *not* do: it removes verbatim and near-verbatim reuse, not semantic proximity, so a suite authored alongside its own skill files is never fully independent of them. Treat a clean gate as a floor, not a guarantee.
+
 📄 See [`synthetic/instance_defs.py`](synthetic/instance_defs.py) for the 150-instance G-G suite (each instance is a Python dict with `id`, `transcript`, and ground-truth `codings`), and [`synthetic/README.md`](synthetic/README.md) for the suite-design rationale.
 
 ### Step 3 — Choose an orchestrator
@@ -286,11 +294,11 @@ If you build something using this recipe, we would love to hear about it — ope
 
 ```bibtex
 @article{gutierrez2026gg,
-  title  = {Translating rating-scale ontologies into {LLM} agents: a general framework for ambient clinical phenotyping},
+  title  = {Translating clinical rating scale ontologies into auditable ambient {LLM} coding agents},
   author = {Guti{\'e}rrez, Enrique and Zhang, Yuhan and Navarro, Jos{\'e}-Blas and Barajas, Ana},
   journal= {npj Digital Medicine},
   year   = {2026},
-  note   = {Submitted},
+  note   = {Under revision},
 }
 
 @software{csa_2026,

@@ -32,6 +32,9 @@ documentation and adds the suite-independence tooling.
 
 ### Added
 
+- README: the "Adapting the framework to your own scale" recipe now warns that lifting examples
+  into skill files and extrapolating from seed examples are where test-set independence is lost,
+  and points at the gate; the citation block carries the revised article title.
 - `synthetic/independence_gate.py`: skill-file independence gate (sequence ratio ≥ 0.7 or shared
   five-token phrase) and `synthetic/suite_v11.json`, the 90-instance de-overlapped suite v1.1;
   `generate_all.py --strict` refuses instances that fail the gate.
