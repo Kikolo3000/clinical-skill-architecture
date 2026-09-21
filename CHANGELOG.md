@@ -4,6 +4,38 @@ All notable changes to `clinical-skill-architecture` will be documented in this 
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] — 2026-09-21
+
+Revision release accompanying the revised npj Digital Medicine manuscript. No change to the
+skill files, prompts or pipeline logic (prompt version stays 1.0.0); the release corrects the
+documentation and adds the suite-independence tooling.
+
+### Fixed
+
+- `docs/reproduce_paper.md`, `README.md`, `MODEL_CARD.md`: the synthetic figures F1 0.840 /
+  sensitivity 0.971 were attributed to Claude Sonnet 4.6; they were produced by Claude Opus 4.6
+  (Sonnet 4.6: F1 0.824). Removed figures that correspond to no result file (decision accuracy
+  0.94, weighted κ 0.92, Cohen's κ 0.68, Spearman ρ ≈ 0.41, an "Opus 4.7" run). Table numbers
+  now match the revised manuscript's table titles rather than an earlier draft.
+- `docs/reproduce_paper.md`: GLM-5 through `openai_compat` documented as the paper's primary
+  configuration and primary reproduction route; the Claude runs are documented as CLI runs.
+- `extras/paper_reproduction/README.md`: the scripts are adapted copies, not verbatim copies.
+- `README.md` Step 5: the human-agreement guidance names the statistic and level of analysis
+  (screening κ, subscale-presence κ, weighted-sum ICC) instead of an unqualified "κ ≥ 0.6".
+- `DISCLAIMER.md`: aligned with the manuscript's classification (research software; not
+  clinical decision support; not a medical device) and its seven preconditions for clinical use.
+- `config/output_format.md` example: HOP coding weight 3 → 1 (HOP is a flat-weight subscale;
+  no output was affected).
+
+### Added
+
+- `synthetic/independence_gate.py`: skill-file independence gate (sequence ratio ≥ 0.7 or shared
+  five-token phrase) and `synthetic/suite_v11.json`, the 90-instance de-overlapped suite v1.1;
+  `generate_all.py --strict` refuses instances that fail the gate.
+- `csa.eval.evaluate_run(..., instance_ids=...)` to evaluate on a subset such as v1.1.
+- Expert-arm and construct-validity figures, with their reference standards and the
+  calibration limit (weighted-sum ICC 0.21), in `MODEL_CARD.md` and `README.md`.
+
 ## [0.1.0] — 2026-04-23
 
 Initial public release accompanying the npj Digital Medicine submission.
@@ -19,5 +51,5 @@ Initial public release accompanying the npj Digital Medicine submission.
 - `csa.eval` evaluation harness with hierarchical accuracy, Clopper-Pearson CIs, Cohen's and weighted kappa
 - 3 demo synthetic instances bundled inside the wheel
 - Full 150-instance synthetic suite generator at `synthetic/`
-- Frozen verbatim copy of the paper pipeline at `extras/paper_reproduction/`
+- Copy of the paper pipeline scripts at `extras/paper_reproduction/`
 - 34-test suite covering fragmenter, scorer, validator, eval metrics, agent smoke

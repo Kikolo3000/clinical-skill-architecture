@@ -48,7 +48,11 @@ from csa.validator import validate_record
 log = logging.getLogger("csa")
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
-"""Lower-cost Anthropic default for public use. See MODEL_CARD.md."""
+"""Convenience default for a first run (one key, prompt caching). It is NOT the configuration
+validated in the paper: the paper's primary model is the open-weights GLM-5 through the
+``openai_compat`` backend (``model="zai/GLM-5", backend="openai_compat"``), and Claude Opus 4.6
+was the proprietary comparison on the synthetic suite. See MODEL_CARD.md and
+docs/reproduce_paper.md for which figures apply to which model."""
 
 
 # ---------------------------------------------------------------------------

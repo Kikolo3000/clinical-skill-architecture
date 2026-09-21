@@ -13,7 +13,7 @@ Most clinical rating scales are coded by hand. A trained rater reads a transcrip
 
 The **Clinical Skill Architecture** is a recipe for turning the operational definitions inside any such scale into an LLM-driven agent that performs the same coding automatically. Each construct is described in its own *skill file*; a generic two-stage orchestrator (screening → per-construct detail) reads those skill files at inference time and emits the scale's canonical hierarchical output. The agent is validated against a synthetic suite of instances with known-by-design ground truth, so accuracy can be reported per construct, per perspective, and per weight tier.
 
-> **v0.1 ships with one fully-implemented scale — the Gottschalk-Gleser depression scale (G-G).** The framework itself is scale-agnostic; the recipe for porting it to your own ontology is in [Adapting the framework to your own scale](#adapting-the-framework-to-your-own-scale).
+> **v0.2 ships with one fully-implemented scale — the Gottschalk-Gleser depression scale (G-G).** The framework itself is scale-agnostic; the recipe for porting it to your own ontology is in [Adapting the framework to your own scale](#adapting-the-framework-to-your-own-scale).
 
 ```python
 from csa import score   # convenience entry — defaults to the G-G depression scale
@@ -48,7 +48,7 @@ for c in result.codings:
 
 ## Paper
 
-Gutiérrez E., Zhang Y., Navarro J.-B., Barajas A. (2026). *Translating rating-scale ontologies into LLM agents: a general framework for ambient clinical phenotyping.* **npj Digital Medicine** *(submitted)*.
+Gutiérrez E., Zhang Y., Navarro J.-B., Barajas A. (2026). *Translating clinical rating scale ontologies into auditable ambient LLM coding agents.* **npj Digital Medicine** *(under revision)*.
 
 See [`CITATION.cff`](CITATION.cff) for a machine-readable citation block.
 
@@ -168,19 +168,17 @@ and the **total depression score** is the sum of the 7 subscale scores. Higher =
 
 ## Validation results
 
-From the npj Digital Medicine paper, evaluated on the 150-instance synthetic suite with the proprietary upper-bound configuration (Claude Opus 4.6, prompt v1.0.0, two-stage screening + detail):
+The paper validates the G-G agent in three arms with three different reference standards. The numbers below are from the paper (prompt v1.0.0); each applies only to the model named. The paper's **primary configuration is the open-weights GLM-5** (`--backend openai_compat`); Claude Opus 4.6 was run on the synthetic suite as a proprietary comparison. The package default (`claude-sonnet-4-6`) is a convenience for a first run, not a validated configuration.
 
-| Metric                         | Value          |
-|--------------------------------|----------------|
-| Decision accuracy              | 0.94           |
-| Clause-level F1                | 0.84           |
-| Sensitivity                    | 0.97           |
-| Precision                      | 0.74           |
-| Cohen's κ (clause coded?)      | 0.68           |
-| Weighted κ (perspective weight)| 0.92           |
-| Subscale-given-detection acc.  | 0.96           |
+| Arm / reference standard | Metric | GLM-5 | Claude Opus 4.6 |
+|---|---|---|---|
+| Synthetic suite v1.1 (90 de-overlapped instances, known ground truth) | clause detection F1 | **0.650** | **0.811** |
+| Synthetic suite v1.0 (all 150 instances) | clause detection F1 | 0.628 | 0.840 |
+| Expert arm (48 DAIC-WOZ fragments, blind 3-rater consensus) | fragment screening sensitivity / specificity | 0.92 / 0.74 | — |
+| Expert arm | weighted-sum ICC(2,1) vs consensus | 0.21 | — |
+| Construct validity (189 DAIC-WOZ sessions, PHQ-8 self-report) | Pearson r / AUC | 0.49 / 0.70 | — |
 
-Reproduce these numbers via [`docs/reproduce_paper.md`](docs/reproduce_paper.md).
+The agent detects consensus-positive fragments well but over-codes within flagged subscales, so its aggregate weighted scores are inflated relative to human coders (ICC 0.21); precision against expert consensus is low for HOP, SAC and SEP (0.13–0.19). Read the expert-arm and PHQ-8 rows as what they are: fragment-level agreement with raters and participant-level association with a self-report questionnaire, not diagnostic accuracy. Full tables, per-subscale values and the provenance of every number are in [`MODEL_CARD.md`](MODEL_CARD.md) and [`docs/reproduce_paper.md`](docs/reproduce_paper.md).
 
 ## Architecture
 
@@ -206,7 +204,7 @@ Backends:
 
 ## Reproducing the paper
 
-The exact pipeline used to produce Tables 2-4 is preserved verbatim under [`extras/paper_reproduction/`](extras/paper_reproduction/). See [`docs/reproduce_paper.md`](docs/reproduce_paper.md).
+[`docs/reproduce_paper.md`](docs/reproduce_paper.md) maps every reported number to its model, backend, script and output file and gives a reproduction route for each, with GLM-5 through `openai_compat` as the primary route. Adapted copies of the research-pipeline scripts are kept under [`extras/paper_reproduction/`](extras/paper_reproduction/) for reference.
 
 ## Adapting the framework to your own scale
 
@@ -271,7 +269,7 @@ Expect 5–20 iteration cycles between v0.1 and "good enough to publish" — eac
 
 Once your synthetic accuracy plateaus and you can articulate *why* the remaining errors happen, you are ready for real transcripts. We strongly recommend two safety nets before publishing clinical conclusions:
 
-1. **Human agreement on a held-out sample** — sample 30–50 fragments from your real corpus, have ≥2 trained raters code them blind, and compute κ between the agent and the rater consensus. Anything ≥ 0.6 weighted κ is a defensible publication threshold; below that, return to Step 4.
+1. **Human agreement on a held-out sample** — sample 30–50 fragments from your real corpus, have ≥2 trained raters code them blind to the agent's output, and report agreement at two levels, naming the statistic each time: Cohen's κ between agent and rater consensus on the *screening decision* (does the fragment contain codable content?) and on *whether each subscale is coded in each fragment*, plus ICC(2,1) between the agent's and the consensus's per-fragment weighted sums. A screening κ ≥ 0.6 is a reasonable bar to publish detection claims; do not publish aggregate-score claims until the ICC is at a comparable level. For calibration, our own G-G agent reached κ = 0.66 on the screening decision, κ = 0.41 on subscale presence and ICC(2,1) = 0.21 on weighted sums against a blind three-rater consensus, which is why the paper claims detection and not calibrated scoring.
 2. **A negative-control corpus** — run the agent on transcripts that should score zero (small-talk, weather reports, technical interviews). Non-zero scores reveal residual false-positive structure that synthetic distractors missed.
 
 📄 See [`docs/reproduce_paper.md`](docs/reproduce_paper.md) for how we did this with DAIC-WOZ + PHQ-8, and the **Disclaimer** section below for the limits of what any current LLM-based coding agent should be used for.

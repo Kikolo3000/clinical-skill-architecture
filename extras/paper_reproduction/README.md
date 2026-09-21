@@ -1,10 +1,10 @@
 # Paper Reproduction (frozen)
 
-The exact scripts used to produce Tables 2-4 in:
+Adapted copies of the scripts used to produce the results in:
 
-> Gutiérrez E., Zhang Y., Navarro J.-B., Barajas A. (2026). _Translating rating-scale ontologies into LLM agents: a general framework for ambient clinical phenotyping._ **npj Digital Medicine** *(submitted)*.
+> Gutiérrez E., Zhang Y., Navarro J.-B., Barajas A. (2026). _Translating clinical rating scale ontologies into auditable ambient LLM coding agents._ **npj Digital Medicine** *(under revision)*.
 
-These files are **frozen verbatim copies** of the research-grade pipeline at the time of submission. They are intentionally _not_ refactored, _not_ kept in sync with the public `clinical-skill-architecture` package, and _not_ a recommended starting point for new work. Use the public package instead.
+These files are **adapted copies** of the research-pipeline scripts (paths and defaults edited for this package; the research repository holds the exact scripts and their commit history, which the paper's provenance table cites by hash). They are intentionally _not_ refactored, _not_ kept in sync with the public `clinical-skill-architecture` package, and _not_ a recommended starting point for new work. Use the public package instead; `docs/reproduce_paper.md` gives the reproduction routes and the model behind every reported number.
 
 ## What's here
 
@@ -27,10 +27,12 @@ pip install -r pinned_requirements.txt
 # 2. Generate the synthetic suite (see ../../synthetic/README.md)
 python ../../synthetic/generate_all.py
 
-# 3. Score each instance using the legacy script (mirrors paper experiments)
+# 3. Score each instance with the paper's primary model (GLM-5 through an OpenAI-compatible
+#    endpoint; the Claude runs in the paper used score_cli.py through the Claude Code CLI)
+export REQUESTY_API_KEY=... REQUESTY_BASE_URL=https://router.requesty.ai/v1
 for d in ../../synthetic/instances/*/; do
     python score_api.py "$(basename $d)" \
-        --model claude-sonnet-4-6 --output-suffix sonnet46_run1 \
+        --model zai/GLM-5 --output-suffix glm5_run1 \
         --max-concurrent 3
 done
 
@@ -38,10 +40,10 @@ done
 python -m csa.eval --gt-dir ../../synthetic/instances --pred-dir runs/sonnet46_run1
 ```
 
-The Tables 2-4 numbers correspond to the configurations listed in `MODEL_CARD.md`. Differences greater than ±0.5 percentage points should be reported as an issue.
+Expected values per model and suite version are in `docs/reproduce_paper.md`. Differences greater than a few percentage points on the same model should be reported as an issue, together with the served model identifier.
 
 ## Why we keep these here instead of in the package
 
 - The public `clinical-skill-architecture` package (import as `csa`) is intentionally simpler than the paper pipeline (single async backend, sensible defaults, fewer flags). That simplicity is good for users but creates a tiny risk of subtle behavioural drift from the paper.
-- These frozen scripts let reviewers and downstream researchers reproduce the **exact** numbers without trusting that we kept the public package bug-for-bug compatible.
+- These scripts let reviewers and downstream researchers follow the research pipeline's control flow without trusting that we kept the public package bug-for-bug compatible; the exact numbers are tied to the research repository commits listed in the paper's provenance table.
 - They depend on the Claude Code CLI (`score_cli.py`) or a Requesty.ai API key (`score_api.py`), which are not appropriate dependencies for a public Python package.

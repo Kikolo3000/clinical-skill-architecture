@@ -1,0 +1,1324 @@
+{
+ "version": "1.1",
+ "definition": "Instances of suite v1.0 with no ground-truth clause reaching sequence ratio >= 0.7 with, or sharing a 5-token phrase with, any quoted skill-file example (independence_gate.py).",
+ "n_instances_v10": 150,
+ "n_instances_v11": 90,
+ "n_gt_clauses_v10": 345,
+ "n_gt_clauses_v11": 177,
+ "n_violating_clauses": 96,
+ "n_excluded_instances": 60,
+ "coverage_by_type": {
+  "PURE": {
+   "v10": 54,
+   "v11": 15
+  },
+  "MULTI": {
+   "v10": 25,
+   "v11": 14
+  },
+  "MCODE": {
+   "v10": 15,
+   "v11": 11
+  },
+  "DIST": {
+   "v10": 15,
+   "v11": 12
+  },
+  "DENY": {
+   "v10": 10,
+   "v11": 7
+  },
+  "NEG": {
+   "v10": 31,
+   "v11": 31
+  }
+ },
+ "coverage_by_difficulty": {
+  "EASY": {
+   "v10": 29,
+   "v11": 6
+  },
+  "MOD": {
+   "v10": 49,
+   "v11": 26
+  },
+  "HARD": {
+   "v10": 44,
+   "v11": 34
+  },
+  "ADV": {
+   "v10": 28,
+   "v11": 24
+  }
+ },
+ "instances": [
+  "SYN_007_PURE_MOD_HOP",
+  "SYN_008_PURE_HARD_HOP",
+  "SYN_012_PURE_EASY_SAC",
+  "SYN_014_PURE_MOD_SAC",
+  "SYN_015_PURE_MOD_SAC",
+  "SYN_017_PURE_HARD_SAC",
+  "SYN_023_PURE_HARD_PMR",
+  "SYN_024_PURE_ADV_PMR",
+  "SYN_029_PURE_MOD_SOM",
+  "SYN_030_PURE_HARD_SOM",
+  "SYN_036_PURE_MOD_DAM",
+  "SYN_050_PURE_MOD_HOS",
+  "SYN_051_PURE_MOD_HOS",
+  "SYN_053_PURE_HARD_HOS",
+  "SYN_054_PURE_ADV_HOS",
+  "SYN_058_MULTI_HARD_HOP-SEP",
+  "SYN_059_MULTI_ADV_HOP-SEP",
+  "SYN_061_MULTI_MOD_SAC-SEP",
+  "SYN_062_MULTI_HARD_SAC-SEP",
+  "SYN_064_MULTI_MOD_DAM-SEP",
+  "SYN_065_MULTI_HARD_DAM-SEP",
+  "SYN_067_MULTI_MOD_SOM-PMR",
+  "SYN_069_MULTI_MOD_HOS-DAM",
+  "SYN_070_MULTI_MOD_HOS-DAM",
+  "SYN_071_MULTI_HARD_HOS-DAM",
+  "SYN_074_MULTI_HARD_SAC-HOP",
+  "SYN_076_MULTI_HARD_SOM-HOS",
+  "SYN_078_MULTI_ADV_DAM-HOS-SEP",
+  "SYN_079_MULTI_ADV_HOS-SEP",
+  "SYN_081_MCODE_HARD_DAM-SEP",
+  "SYN_082_MCODE_HARD_HOS-DAM",
+  "SYN_083_MCODE_ADV_HOS-DAM",
+  "SYN_086_MCODE_HARD_SAC-HOP",
+  "SYN_087_MCODE_ADV_SAC-HOP",
+  "SYN_088_MCODE_HARD_HOS-SEP",
+  "SYN_089_MCODE_ADV_HOS-SEP",
+  "SYN_090_MCODE_HARD_SOM-PMR",
+  "SYN_091_MCODE_ADV_DAM-HOS-SEP",
+  "SYN_092_MCODE_ADV_DAM-HOS-SEP",
+  "SYN_094_MCODE_ADV_HOS-DAM",
+  "SYN_095_DIST_MOD_HOP",
+  "SYN_097_DIST_MOD_SEP",
+  "SYN_099_DIST_MOD_HOS",
+  "SYN_100_DIST_HARD_HOP",
+  "SYN_101_DIST_HARD_SAC",
+  "SYN_103_DIST_HARD_HOS",
+  "SYN_104_DIST_HARD_PMR",
+  "SYN_105_DIST_ADV_NULL",
+  "SYN_106_DIST_ADV_HOP",
+  "SYN_107_DIST_ADV_DAM",
+  "SYN_108_DIST_ADV_SAC",
+  "SYN_109_DIST_ADV_HOS",
+  "SYN_110_DENY_MOD_SAC",
+  "SYN_112_DENY_MOD_SEP",
+  "SYN_114_DENY_HARD_SAC",
+  "SYN_115_DENY_HARD_DAM",
+  "SYN_116_DENY_HARD_SEP",
+  "SYN_118_DENY_ADV_SAC-HOS",
+  "SYN_119_DENY_ADV_DAM-SEP",
+  "SYN_120_NEG_EASY_NULL",
+  "SYN_121_NEG_EASY_NULL",
+  "SYN_122_NEG_EASY_NULL",
+  "SYN_123_NEG_MOD_NULL",
+  "SYN_124_NEG_MOD_NULL",
+  "SYN_125_NEG_EASY_NULL",
+  "SYN_126_NEG_EASY_NULL",
+  "SYN_127_NEG_MOD_NULL",
+  "SYN_128_NEG_MOD_NULL",
+  "SYN_129_NEG_MOD_NULL",
+  "SYN_130_NEG_MOD_NULL",
+  "SYN_131_NEG_MOD_NULL",
+  "SYN_132_NEG_HARD_NULL",
+  "SYN_133_NEG_HARD_NULL",
+  "SYN_134_NEG_HARD_NULL",
+  "SYN_135_NEG_MOD_NULL",
+  "SYN_136_NEG_HARD_NULL",
+  "SYN_137_NEG_HARD_NULL",
+  "SYN_138_NEG_HARD_NULL",
+  "SYN_139_NEG_MOD_NULL",
+  "SYN_140_NEG_HARD_NULL",
+  "SYN_141_NEG_HARD_NULL",
+  "SYN_142_NEG_HARD_NULL",
+  "SYN_143_NEG_HARD_NULL",
+  "SYN_144_NEG_HARD_NULL",
+  "SYN_145_NEG_ADV_NULL",
+  "SYN_146_NEG_ADV_NULL",
+  "SYN_147_NEG_ADV_NULL",
+  "SYN_148_NEG_ADV_NULL",
+  "SYN_149_NEG_ADV_NULL",
+  "SYN_150_NEG_ADV_NULL"
+ ],
+ "excluded": {
+  "SYN_001_PURE_EASY_HOP": [
+   {
+    "clause": "i just don't see the point anymore",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 45,
+     "phrase": "I just don't see the point anymore.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "nothing is going to change no matter what i do",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 48,
+     "phrase": "Nothing's going to change, no matter what I do.",
+     "ratio": 0.967,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_002_PURE_EASY_HOP": [
+   {
+    "clause": "i feel like nobody cares about me",
+    "sub_item": "HOP.2a",
+    "best": {
+     "skill": "HOP",
+     "line": 51,
+     "phrase": "I feel like nobody cares about me.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_003_PURE_EASY_HOP": [
+   {
+    "clause": "i've completely lost all motivation",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 54,
+     "phrase": "I've completely lost all motivation.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i just don't care about anything anymore",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 120,
+     "phrase": "I just don't care about anything anymore.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_004_PURE_EASY_HOP": [
+   {
+    "clause": "i guess i'm just unlucky",
+    "sub_item": "HOP.1",
+    "best": {
+     "skill": "HOP",
+     "line": 66,
+     "phrase": "I guess I'm just unlucky.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_005_PURE_MOD_HOP": [
+   {
+    "clause": "she says she has nothing to look forward to",
+    "sub_item": "HOP.3a",
+    "best": {
+     "skill": "HOP",
+     "line": 57,
+     "phrase": "My sister says she has nothing to look forward to.",
+     "ratio": 0.913,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_006_PURE_MOD_HOP": [
+   {
+    "clause": "i can't even help myself at this point",
+    "sub_item": "HOP.2b",
+    "best": {
+     "skill": "HOP",
+     "line": 60,
+     "phrase": "I can't even help myself at this point.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_009_PURE_EASY_SAC": [
+   {
+    "clause": "it's all my fault that the marriage fell apart",
+    "sub_item": "SAC.A.a",
+    "best": {
+     "skill": "SAC",
+     "line": 59,
+     "phrase": "It's all my fault that the marriage fell apart.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_010_PURE_EASY_SAC": [
+   {
+    "clause": "i feel so ashamed of how i acted at that party",
+    "sub_item": "SAC.B.a",
+    "best": {
+     "skill": "SAC",
+     "line": 62,
+     "phrase": "I feel so ashamed of how I acted at the party.",
+     "ratio": 0.967,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_011_PURE_EASY_SAC": [
+   {
+    "clause": "i can never do anything right",
+    "sub_item": "SAC.C.b2",
+    "best": {
+     "skill": "SAC",
+     "line": 68,
+     "phrase": "I'm such an idiot, I can never do anything right.",
+     "ratio": 0.763,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_013_PURE_MOD_SAC": [
+   {
+    "clause": "i keep making the same stupid mistakes",
+    "sub_item": "SAC.C.b3",
+    "best": {
+     "skill": "SAC",
+     "line": 77,
+     "phrase": "I keep making the same stupid mistakes.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_016_PURE_HARD_SAC": [
+   {
+    "clause": "i feel like i have to be perfect all the time or everything falls apart",
+    "sub_item": "SAC.C.c2",
+    "best": {
+     "skill": "SAC",
+     "line": 86,
+     "phrase": "I feel like I have to be perfect all the time or I'll fall apart.",
+     "ratio": 0.904,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i can never live up to what they expect of me",
+    "sub_item": "SAC.C.a4",
+    "best": {
+     "skill": "SAC",
+     "line": 80,
+     "phrase": "I can never live up to what they expect of me.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_018_PURE_ADV_SAC": [
+   {
+    "clause": "sometimes i think everyone would be better off without me",
+    "sub_item": "SAC.C.b",
+    "best": {
+     "skill": "SAC",
+     "line": 65,
+     "phrase": "Sometimes I think everyone would be better off without me.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_019_PURE_EASY_PMR": [
+   {
+    "clause": "everything just feels slow like i'm moving through mud",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 40,
+     "phrase": "Everything just feels slow, like I'm moving through mud.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_020_PURE_EASY_PMR": [
+   {
+    "clause": "i can barely think straight",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 37,
+     "phrase": "I can barely think straight, my mind feels so sluggish.",
+     "ratio": 0.675,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "my thoughts are just stuck i can't process anything",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 46,
+     "phrase": "My thoughts are just... stuck. I can't process anything.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_021_PURE_MOD_PMR": [
+   {
+    "clause": "it takes me forever to do the simplest things now",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 55,
+     "phrase": "It takes me forever to do the simplest things now.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i feel like i'm in slow motion",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 58,
+     "phrase": "I feel like I'm in slow motion.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i just feel numb like i can't feel anything anymore",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 52,
+     "phrase": "I just feel numb, like I can't feel anything anymore.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_022_PURE_MOD_PMR": [
+   {
+    "clause": "i seem like i'm wading through molasses all day",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 49,
+     "phrase": "He said he feels like he's wading through molasses all day.",
+     "ratio": 0.819,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i can't seem to get myself going",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 43,
+     "phrase": "I can't seem to get myself going in the morning.",
+     "ratio": 0.81,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_025_PURE_EASY_SOM": [
+   {
+    "clause": "i haven't been sleeping well for weeks",
+    "sub_item": "SOM.B",
+    "best": {
+     "skill": "SOM",
+     "line": 35,
+     "phrase": "I haven't been sleeping well for weeks.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i get these terrible headaches almost every day",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 44,
+     "phrase": "I get these terrible headaches almost every day.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_026_PURE_EASY_SOM": [
+   {
+    "clause": "i've completely lost my appetite",
+    "sub_item": "SOM.D",
+    "best": {
+     "skill": "SOM",
+     "line": 41,
+     "phrase": "I've completely lost my appetite.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i've lost about fifteen pounds without trying",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 53,
+     "phrase": "I've lost about 15 pounds without trying.",
+     "ratio": 0.894,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_027_PURE_EASY_SOM": [
+   {
+    "clause": "i have no energy i feel exhausted all the time",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 47,
+     "phrase": "I have no energy, I feel exhausted all the time.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "my back has been killing me lately",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 38,
+     "phrase": "My back has been killing me lately.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_028_PURE_MOD_SOM": [
+   {
+    "clause": "my stomach has been bothering me constantly",
+    "sub_item": "SOM.D",
+    "best": {
+     "skill": "SOM",
+     "line": 50,
+     "phrase": "My stomach has been bothering me constantly.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i feel so heavy like my limbs weigh a thousand pounds",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 62,
+     "phrase": "I feel so heavy, like my limbs weigh a thousand pounds.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_031_PURE_EASY_DAM": [
+   {
+    "clause": "my father died of cancer last year",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "DAM",
+     "line": 44,
+     "phrase": "My father died of cancer last year.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "my dog was hit by a car and killed",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "DAM",
+     "line": 62,
+     "phrase": "My dog was hit by a car and killed.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_032_PURE_EASY_DAM": [
+   {
+    "clause": "i'm afraid i'm going to die from this illness",
+    "sub_item": "DAM.A.a",
+    "best": {
+     "skill": "DAM",
+     "line": 47,
+     "phrase": "I'm afraid I'm going to die from this illness.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i keep thinking about death all the time",
+    "sub_item": "DAM.A.a",
+    "best": {
+     "skill": "DAM",
+     "line": 68,
+     "phrase": "I keep thinking about death.",
+     "ratio": 0.806,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_033_PURE_EASY_DAM": [
+   {
+    "clause": "i broke my arm in the accident",
+    "sub_item": "DAM.B.a",
+    "best": {
+     "skill": "DAM",
+     "line": 50,
+     "phrase": "I broke my arm in the accident.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "my friend she got badly hurt in the fire",
+    "sub_item": "DAM.B.b",
+    "best": {
+     "skill": "DAM",
+     "line": 56,
+     "phrase": "She got badly hurt in the fire.",
+     "ratio": 0.857,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "the car was completely totaled in the crash",
+    "sub_item": "DAM.B.c",
+    "best": {
+     "skill": "DAM",
+     "line": 53,
+     "phrase": "The car was completely totaled in the crash.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_034_PURE_MOD_DAM": [
+   {
+    "clause": "my neighbor had a terrible wound that wouldn't heal",
+    "sub_item": "DAM.B.b",
+    "best": {
+     "skill": "DAM",
+     "line": 71,
+     "phrase": "He had a terrible wound that wouldn't heal.",
+     "ratio": 0.882,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "the building on our street was destroyed in that earthquake",
+    "sub_item": "DAM.B.c",
+    "best": {
+     "skill": "DAM",
+     "line": 65,
+     "phrase": "The building was destroyed in the earthquake.",
+     "ratio": 0.835,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_035_PURE_MOD_DAM": [
+   {
+    "clause": "my grandmother she died in the hospital",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "SOM",
+     "line": 73,
+     "phrase": "My grandmother died in the hospital.",
+     "ratio": 0.946,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_037_PURE_HARD_DAM": [
+   {
+    "clause": "i feel like i'm dying sometimes",
+    "sub_item": "DAM.A.a",
+    "best": {
+     "skill": "PMR",
+     "line": 58,
+     "phrase": "I feel like I'm in slow motion.",
+     "ratio": 0.787,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_038_PURE_ADV_DAM": [
+   {
+    "clause": "i'm not afraid of death itself that doesn't bother me",
+    "sub_item": "DAM.A.d",
+    "best": {
+     "skill": "DAM",
+     "line": 59,
+     "phrase": "I'm not afraid of dying, it doesn't bother me.",
+     "ratio": 0.825,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_039_PURE_EASY_SEP": [
+   {
+    "clause": "she left me and i don't think she's coming back",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 44,
+     "phrase": "She left me and I don't think she's coming back.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i feel so alone like nobody wants me around",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 50,
+     "phrase": "I feel so alone, like nobody wants me around.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_040_PURE_EASY_SEP": [
+   {
+    "clause": "i miss my mother so much since she passed",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 47,
+     "phrase": "I miss my mother so much since she passed.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "ever since my best friend moved away there's this emptiness",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 65,
+     "phrase": "Ever since my best friend moved away, there's this emptiness.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_041_PURE_MOD_SEP": [
+   {
+    "clause": "my whole family turned their backs on me",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 68,
+     "phrase": "My whole family turned their backs on me.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "the kids were taken away from their parents",
+    "sub_item": "SEP.b",
+    "best": {
+     "skill": "SEP",
+     "line": 56,
+     "phrase": "The kids were taken away from their parents.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_042_PURE_MOD_SEP": [
+   {
+    "clause": "the children lost contact with their father",
+    "sub_item": "SEP.b",
+    "best": {
+     "skill": "SEP",
+     "line": 71,
+     "phrase": "After the divorce, the children lost contact with their father.",
+     "ratio": 0.827,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "he lost his wife and never recovered from it",
+    "sub_item": "SEP.b",
+    "best": {
+     "skill": "SEP",
+     "line": 53,
+     "phrase": "He lost his wife to cancer and never recovered.",
+     "ratio": 0.8,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_043_PURE_MOD_SEP": [
+   {
+    "clause": "the old house was torn down it meant so much to us",
+    "sub_item": "SEP.c",
+    "best": {
+     "skill": "SEP",
+     "line": 59,
+     "phrase": "The old house was torn down, it meant so much to us.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i got fired from my job so that support system is gone",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 91,
+     "phrase": "I got fired from my job.",
+     "ratio": 0.597,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_044_PURE_HARD_SEP": [
+   {
+    "clause": "my parents left me at my grandma's when i was little",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 125,
+     "phrase": "My parents left me at the orphanage when I was little.",
+     "ratio": 0.857,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_045_PURE_EASY_HOS": [
+   {
+    "clause": "i just want to punch my boss in the face",
+    "sub_item": "HOS.A.a1",
+    "best": {
+     "skill": "HOS",
+     "line": 67,
+     "phrase": "I just want to punch my boss in the face.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "my neighbor is such an idiot",
+    "sub_item": "HOS.A.c1",
+    "best": {
+     "skill": "HOS",
+     "line": 70,
+     "phrase": "My neighbor is such an idiot.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_046_PURE_EASY_HOS": [
+   {
+    "clause": "my mother always criticized everything i did",
+    "sub_item": "HOS.B.c1",
+    "best": {
+     "skill": "HOS",
+     "line": 79,
+     "phrase": "My mother always criticized everything I did.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "he killed a man in a bar fight",
+    "sub_item": "HOS.B.a1",
+    "best": {
+     "skill": "HOS",
+     "line": 76,
+     "phrase": "He killed the man in a bar fight.",
+     "ratio": 0.935,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_047_PURE_EASY_HOS": [
+   {
+    "clause": "i was so mad i kicked the wall",
+    "sub_item": "HOS.A.a3",
+    "best": {
+     "skill": "HOS",
+     "line": 85,
+     "phrase": "I was so mad I kicked the wall.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "this stupid computer never works right",
+    "sub_item": "HOS.A.b3",
+    "best": {
+     "skill": "HOS",
+     "line": 88,
+     "phrase": "This stupid computer never works right.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_048_PURE_EASY_HOS": [
+   {
+    "clause": "the teachers were so unfair to the students",
+    "sub_item": "HOS.B.d",
+    "best": {
+     "skill": "HOS",
+     "line": 82,
+     "phrase": "The teachers were so unfair to the students.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "she let the dog starve",
+    "sub_item": "HOS.B.a2",
+    "best": {
+     "skill": "HOS",
+     "line": 97,
+     "phrase": "She let the dog starve.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_049_PURE_MOD_HOS": [
+   {
+    "clause": "i shouldn't have left them when they needed me",
+    "sub_item": "HOS.A.b1",
+    "best": {
+     "skill": "HOS",
+     "line": 73,
+     "phrase": "I shouldn't have left them when they needed me.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i told her off for being so rude",
+    "sub_item": "HOS.A.c1",
+    "best": {
+     "skill": "HOS",
+     "line": 149,
+     "phrase": "I told her off for being so rude.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "the storm destroyed the entire village",
+    "sub_item": "HOS.B.d3",
+    "best": {
+     "skill": "HOS",
+     "line": 94,
+     "phrase": "The storm destroyed the entire village.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_052_PURE_HARD_HOS": [
+   {
+    "clause": "i'm not really angry about it anymore",
+    "sub_item": "HOS.B.f3",
+    "best": {
+     "skill": "HOS",
+     "line": 91,
+     "phrase": "I'm not really angry at anyone.",
+     "ratio": 0.866,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_055_MULTI_EASY_HOP-SEP": [
+   {
+    "clause": "there's nothing to look forward to",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 57,
+     "phrase": "My sister says she has nothing to look forward to.",
+     "ratio": 0.747,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i feel so empty since she's gone",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SEP",
+     "line": 98,
+     "phrase": "I feel so empty since he left.",
+     "ratio": 0.852,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "nothing will ever get better",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 93,
+     "phrase": "I don't think things will ever get better for me.",
+     "ratio": 0.711,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_056_MULTI_EASY_HOP-SEP": [
+   {
+    "clause": "i miss them so much",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SAC",
+     "line": 97,
+     "phrase": "I miss my mother so much.",
+     "ratio": 0.837,
+     "shared_ngram": false
+    }
+   },
+   {
+    "clause": "i don't think things will ever be the same",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 93,
+     "phrase": "I don't think things will ever get better for me.",
+     "ratio": 0.822,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_057_MULTI_MOD_HOP-SEP": [
+   {
+    "clause": "there's no point in trying to make new friends",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 111,
+     "phrase": "There's no point in trying, nothing works.",
+     "ratio": 0.721,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_060_MULTI_MOD_SAC-SEP": [
+   {
+    "clause": "she left because i wasn't good enough",
+    "sub_item": "SAC.B.a",
+    "best": {
+     "skill": "SAC",
+     "line": 131,
+     "phrase": "She left because I'm not good enough.",
+     "ratio": 0.904,
+     "shared_ngram": false
+    }
+   },
+   {
+    "clause": "it's all my fault i drove her away",
+    "sub_item": "SAC.A.a",
+    "best": {
+     "skill": "SEP",
+     "line": 76,
+     "phrase": "It's all my fault she left.",
+     "ratio": 0.7,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_063_MULTI_MOD_DAM-SEP": [
+   {
+    "clause": "my father died last spring",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "DAM",
+     "line": 125,
+     "phrase": "My mother died last year.",
+     "ratio": 0.76,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_066_MULTI_MOD_SOM-PMR": [
+   {
+    "clause": "i have these terrible headaches",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "PMR",
+     "line": 66,
+     "phrase": "I have a terrible headache.",
+     "ratio": 0.877,
+     "shared_ngram": false
+    }
+   },
+   {
+    "clause": "everything feels like it's in slow motion",
+    "sub_item": "PMR.1",
+    "best": {
+     "skill": "PMR",
+     "line": 58,
+     "phrase": "I feel like I'm in slow motion.",
+     "ratio": 0.817,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_068_MULTI_HARD_SOM-PMR": [
+   {
+    "clause": "i can't sleep",
+    "sub_item": "SOM.B",
+    "best": {
+     "skill": "SAC",
+     "line": 100,
+     "phrase": "I can't sleep at night.",
+     "ratio": 0.743,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_072_MULTI_MOD_SAC-HOP": [
+   {
+    "clause": "there's no point trying anymore",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 111,
+     "phrase": "There's no point in trying, nothing works.",
+     "ratio": 0.761,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_073_MULTI_MOD_SAC-HOP": [
+   {
+    "clause": "i can't do anything right",
+    "sub_item": "SAC.C.b2",
+    "best": {
+     "skill": "PMR",
+     "line": 105,
+     "phrase": "I'm so useless, I can't do anything right.",
+     "ratio": 0.769,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_075_MULTI_MOD_SOM-HOS": [
+   {
+    "clause": "i have this horrible headache",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "PMR",
+     "line": 66,
+     "phrase": "I have a terrible headache.",
+     "ratio": 0.836,
+     "shared_ngram": false
+    }
+   },
+   {
+    "clause": "i'm so angry at my doctor for not listening to me",
+    "sub_item": "HOS.A.c1",
+    "best": {
+     "skill": "SAC",
+     "line": 91,
+     "phrase": "I'm so angry at my boss for what he did.",
+     "ratio": 0.636,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_077_MULTI_MOD_HOP-SOM": [
+   {
+    "clause": "i have no energy to get through the day",
+    "sub_item": "SOM.E",
+    "best": {
+     "skill": "SOM",
+     "line": 107,
+     "phrase": "I have no energy to get through the day.",
+     "ratio": 1.0,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i have no reason to either like what's the point",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "SOM",
+     "line": 109,
+     "phrase": "I have no reason to get through the day.",
+     "ratio": 0.69,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_080_MCODE_HARD_DAM-SEP": [
+   {
+    "clause": "my mother died",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "DAM",
+     "line": 125,
+     "phrase": "My mother died last year.",
+     "ratio": 0.737,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_084_MCODE_HARD_SAC-SEP": [
+   {
+    "clause": "she left because i'm worthless",
+    "sub_item": "SAC.C.b2",
+    "best": {
+     "skill": "SEP",
+     "line": 109,
+     "phrase": "She left me because I'm worthless.",
+     "ratio": 0.952,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_085_MCODE_HARD_SAC-SEP": [
+   {
+    "clause": "it's my fault they all left",
+    "sub_item": "SAC.A.a",
+    "best": {
+     "skill": "SEP",
+     "line": 76,
+     "phrase": "It's all my fault she left.",
+     "ratio": 0.792,
+     "shared_ngram": false
+    }
+   },
+   {
+    "clause": "i miss them all so much",
+    "sub_item": "SEP.a",
+    "best": {
+     "skill": "SAC",
+     "line": 97,
+     "phrase": "I miss my mother so much.",
+     "ratio": 0.766,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_093_MCODE_ADV_SAC-HOP": [
+   {
+    "clause": "nothing will ever get better",
+    "sub_item": "HOP.3b",
+    "best": {
+     "skill": "HOP",
+     "line": 93,
+     "phrase": "I don't think things will ever get better for me.",
+     "ratio": 0.711,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_096_DIST_MOD_SAC": [
+   {
+    "clause": "i'm such a terrible person for what i did to them",
+    "sub_item": "SAC.C.b2",
+    "best": {
+     "skill": "SAC",
+     "line": 113,
+     "phrase": "I hate myself for what I did to her.",
+     "ratio": 0.667,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_098_DIST_MOD_DAM": [
+   {
+    "clause": "my neighbor's dog got hit by a car died right there",
+    "sub_item": "DAM.A.b",
+    "best": {
+     "skill": "SOM",
+     "line": 100,
+     "phrase": "I got hit by a car and broke my leg.",
+     "ratio": 0.535,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_102_DIST_HARD_SOM": [
+   {
+    "clause": "my stomach has been really bad lately",
+    "sub_item": "SOM.D",
+    "best": {
+     "skill": "SOM",
+     "line": 38,
+     "phrase": "My back has been killing me lately.",
+     "ratio": 0.704,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_111_DENY_MOD_DAM": [
+   {
+    "clause": "i'm not afraid of dying it doesn't bother me at all",
+    "sub_item": "DAM.A.d",
+    "best": {
+     "skill": "DAM",
+     "line": 59,
+     "phrase": "I'm not afraid of dying, it doesn't bother me.",
+     "ratio": 0.926,
+     "shared_ngram": true
+    }
+   }
+  ],
+  "SYN_113_DENY_HARD_HOS": [
+   {
+    "clause": "i'm not angry at anyone",
+    "sub_item": "HOS.B.f3",
+    "best": {
+     "skill": "HOS",
+     "line": 91,
+     "phrase": "I'm not really angry at anyone.",
+     "ratio": 0.868,
+     "shared_ngram": false
+    }
+   }
+  ],
+  "SYN_117_DENY_ADV_MIXED": [
+   {
+    "clause": "i'm not afraid of dying",
+    "sub_item": "DAM.A.d",
+    "best": {
+     "skill": "DAM",
+     "line": 59,
+     "phrase": "I'm not afraid of dying, it doesn't bother me.",
+     "ratio": 0.687,
+     "shared_ngram": true
+    }
+   },
+   {
+    "clause": "i'm not angry at anyone",
+    "sub_item": "HOS.B.f3",
+    "best": {
+     "skill": "HOS",
+     "line": 91,
+     "phrase": "I'm not really angry at anyone.",
+     "ratio": 0.868,
+     "shared_ngram": false
+    }
+   }
+  ]
+ }
+}

@@ -117,6 +117,20 @@ def main() -> int:
 
     sys.path.insert(0, str(Path(__file__).parent))
     from instance_defs import ALL_INSTANCES  # type: ignore
+    # v0.2.0: report ground-truth clauses that reproduce a skill-file example. Suite v1.0 is
+    # published as is (60 instances fail the gate; see suite_v11.json for the clean subset);
+    # NEW instances must pass it. Pass --strict to refuse generation on any violation.
+    try:
+        from independence_gate import audit_instances  # type: ignore
+        _viol = audit_instances(ALL_INSTANCES)
+        if _viol:
+            print(f"independence gate: {sum(len(v) for v in _viol.values())} clause(s) in "
+                  f"{len(_viol)} instance(s) reproduce a skill-file example; the clean subset is "
+                  f"synthetic/suite_v11.json", file=sys.stderr)
+            if "--strict" in sys.argv:
+                return 1
+    except ImportError:
+        pass
 
     instances = ALL_INSTANCES
     if args.type:

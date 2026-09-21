@@ -76,3 +76,27 @@ def test_match_codings_unmatched_gt_is_fn():
     matches = match_codings(gt, pred)
     assert len(matches) == 1
     assert matches[0]["match_type"] == "fn"
+
+
+def test_evaluate_run_instance_ids_filters_instances(tmp_path):
+    """v0.2.0: `instance_ids` restricts evaluation to the named instance directories (suite v1.1)."""
+    import json
+    from csa.eval import evaluate_run
+
+    def make(inst, clause):
+        d = tmp_path / "gt" / inst
+        d.mkdir(parents=True)
+        rec = {"id": f"{inst}_0001", "screening": {"decision": "needs_analysis", "flagged_subscales": ["HOP"]},
+               "codings": [{"clause": clause, "subscale": "HOP", "sub_item": "HOP.3b",
+                            "perspective": "self", "weight": 1, "rationale": "x"}]}
+        (d / "ground_truth.jsonl").write_text(json.dumps(rec) + "\n")
+        p = tmp_path / "pred" / inst
+        p.mkdir(parents=True)
+        (p / "output.jsonl").write_text(json.dumps(rec) + "\n")
+
+    make("SYN_A", "nothing is worth doing any more")
+    make("SYN_B", "i cannot see a way forward")
+    full = evaluate_run(tmp_path / "gt", tmp_path / "pred")
+    sub = evaluate_run(tmp_path / "gt", tmp_path / "pred", instance_ids={"SYN_A"})
+    assert full.detection_f1 == 1.0 and sub.detection_f1 == 1.0
+    assert full.n_gt_codings == 2 and sub.n_gt_codings == 1

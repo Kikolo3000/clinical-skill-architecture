@@ -19,7 +19,7 @@ following structure. The subagent MUST write this JSON to the specified output f
       "subscale": "HOP",
       "sub_item": "HOP.3b",
       "perspective": "self",
-      "weight": 3,
+      "weight": 1,
       "rationale": "Direct expression of hopelessness/despair attributed to self"
     },
     {
@@ -32,7 +32,7 @@ following structure. The subagent MUST write this JSON to the specified output f
     }
   ],
   "subscale_summaries": {
-    "HOP": { "count": 1, "weighted_sum": 3, "items_found": ["HOP.3b"] },
+    "HOP": { "count": 1, "weighted_sum": 1, "items_found": ["HOP.3b"] },
     "SAC": { "count": 1, "weighted_sum": 3, "items_found": ["SAC.B.a"] },
     "PMR": { "count": 0, "weighted_sum": 0, "items_found": [] },
     "SOM": { "count": 0, "weighted_sum": 0, "items_found": [] },

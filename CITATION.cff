@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the article and the software."
 title: "Clinical Skill Architecture: a framework for translating rating-scale ontologies into LLM agents"
-version: "0.1.0"
-date-released: "2026-05-01"
+version: "0.2.0"
+date-released: "2026-09-21"
 type: software
 license: MIT
 repository-code: "https://github.com/Kikolo3000/clinical-skill-architecture"
@@ -25,7 +25,7 @@ keywords:
   - clinical-nlp
   - llm-agents
   - rating-scales
-  - ambient-phenotyping
+  - auditable-coding
   - computational-psychiatry
   - mental-health
   - depression
@@ -41,7 +41,7 @@ preferred-citation:
       given-names: "José-Blas"
     - family-names: "Barajas"
       given-names: "Ana"
-  title: "Translating rating-scale ontologies into LLM agents: a general framework for ambient clinical phenotyping"
+  title: "Translating clinical rating scale ontologies into auditable ambient LLM coding agents"
   journal: "npj Digital Medicine"
   year: 2026
-  notes: "Submitted"
+  notes: "Under revision"

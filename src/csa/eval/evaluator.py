@@ -327,14 +327,21 @@ def evaluate_run(
     *,
     gt_filename: str = "ground_truth.jsonl",
     pred_filename: str = "output.jsonl",
+    instance_ids: "set[str] | list[str] | None" = None,
 ) -> MetricsReport:
     """
     Compare every instance under `gt_dir/<id>/<gt_filename>` against
     `pred_dir/<id>/<pred_filename>`. Returns an aggregated `MetricsReport`.
+
+    `instance_ids` restricts the evaluation to the named instance directories, e.g. the
+    de-overlapped suite v1.1 (`synthetic/suite_v11.json`, key "instances").
     """
     gt_root = Path(gt_dir)
     pred_root = Path(pred_dir)
     instance_dirs = sorted(d for d in gt_root.iterdir() if d.is_dir())
+    if instance_ids is not None:
+        wanted = set(instance_ids)
+        instance_dirs = [d for d in instance_dirs if d.name in wanted]
 
     instance_results: list[dict] = []
     for d in instance_dirs:
