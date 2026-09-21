@@ -32,6 +32,8 @@ documentation and adds the suite-independence tooling.
 
 ### Added
 
+- Concept DOI (10.5281/zenodo.20435438) recorded in `CITATION.cff` and the README software
+  citation; the software citation's version was still 0.1.0 and is now 0.2.0.
 - README: the "Adapting the framework to your own scale" recipe now warns that lifting examples
   into skill files and extrapolating from seed examples are where test-set independence is lost,
   and points at the gate; the citation block carries the revised article title.

@@ -6,6 +6,10 @@ date-released: "2026-09-21"
 type: software
 license: MIT
 repository-code: "https://github.com/Kikolo3000/clinical-skill-architecture"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20435438"
+    description: "Concept DOI; resolves to the latest archived version"
 url: "https://github.com/Kikolo3000/clinical-skill-architecture"
 authors:
   - family-names: "Gutiérrez"

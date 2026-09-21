@@ -306,7 +306,9 @@ If you build something using this recipe, we would love to hear about it — ope
   author = {Guti{\'e}rrez, Enrique and Zhang, Yuhan and Navarro, Jos{\'e}-Blas and Barajas, Ana},
   year   = {2026},
   url    = {https://github.com/Kikolo3000/clinical-skill-architecture},
-  version= {0.1.0},
+  version= {0.2.0},
+  doi    = {10.5281/zenodo.20435438},
+  note   = {Concept DOI; resolves to the latest archived version},
 }
 ```
 
