@@ -26,6 +26,9 @@ documentation and adds the suite-independence tooling.
   clinical decision support; not a medical device) and its seven preconditions for clinical use.
 - `config/output_format.md` example: HOP coding weight 3 → 1 (HOP is a flat-weight subscale;
   no output was affected).
+- Suite v1.0 figures for GLM-5 restated from the current evaluator (F1 0.629, precision 0.650,
+  one false-positive coding fewer than the artefact archived in March 2026); Claude Opus 4.6 is
+  unchanged.
 
 ### Added
 

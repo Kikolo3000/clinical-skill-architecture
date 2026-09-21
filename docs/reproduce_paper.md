@@ -15,7 +15,10 @@ provenance" of the paper.
 > result file. Those figures were produced by **Claude Opus 4.6** (F1 0.840, sensitivity 0.971,
 > precision 0.740, decision accuracy 0.920); Sonnet 4.6 scored F1 0.824. The table numbers
 > also referred to an earlier draft. Everything below has been checked against the archived
-> outputs; the README and MODEL_CARD carry the same figures.
+> outputs; the README and MODEL_CARD carry the same figures. The suite v1.0 figures are those
+> produced by the current evaluator: the evaluation artefact archived in March 2026 differed for
+> GLM-5 by one false-positive coding (114 vs 113; F1 0.628 vs 0.629), and the Claude Opus 4.6
+> artefact is identical.
 
 ## Which model produced which number
 
@@ -24,7 +27,7 @@ provenance" of the paper.
 | Construct validity vs PHQ-8, 189 DAIC-WOZ sessions (Results; ablation table) | `zai/GLM-5`, temperature 0 | Requesty router, OpenAI-compatible API | `extras/paper_reproduction/score_api.py` | Pearson r 0.492, Spearman ρ 0.475, AUC 0.702; sensitivity 0.554 / specificity 0.805 at the in-sample Youden cut-point |
 | Zero-shot baseline, same 189 sessions | `zai/GLM-5` | same | research repository `baselines/score_api_zeroshot.py` | r 0.595, AUC 0.749; sensitivity 0.804 / specificity 0.594 |
 | Expert arm, 48 fragments vs blind three-rater consensus | outputs of the two runs above | offline | research repository `annotation/` | full: sensitivity 0.920, specificity 0.739, F1 0.852, ICC(2,1) 0.211; zero-shot: 0.680 / 0.826 / 0.739, ICC(2,1) 0.533 |
-| Synthetic suite, GLM-5 | `zai/GLM-5` | Requesty API | `score_api.py` (research: `synthetic/batch_api.py`) | v1.1: F1 **0.650**, sens 0.644, prec 0.655; v1.0: F1 0.628, sens 0.609, prec 0.648 |
+| Synthetic suite, GLM-5 | `zai/GLM-5` | Requesty API | `score_api.py` (research: `synthetic/batch_api.py`) | v1.1: F1 **0.650**, sens 0.644, prec 0.655; v1.0: F1 0.629, sens 0.609, prec 0.650 |
 | Synthetic suite, Claude Opus 4.6 | alias `opus` (recorded as Opus 4.6) | Claude Code CLI (`claude -p`) | `score_cli.py` (research: `synthetic/batch_cli.py`) | v1.1: F1 **0.811**, sens 0.960, prec 0.702; v1.0: F1 0.840, sens 0.971, prec 0.740 |
 | Synthetic suite, Sonnet 4.6 / Haiku 4.5 (Supplementary Note on model capability) | aliases `sonnet`, `haiku` | Claude Code CLI | `score_cli.py` | v1.0 F1 0.824 / 0.832 |
 | Context-window experiment (Supplementary Note) | alias `sonnet` (Sonnet 4.6) | Claude Code CLI | research repository `context_rot/` | 150/150 needles detected |

@@ -50,8 +50,8 @@ instances that pass the skill-file independence gate, v1.0 = all 150):
 | Metric                              | GLM-5 v1.1 | GLM-5 v1.0 | Opus 4.6 v1.1 | Opus 4.6 v1.0 |
 |-------------------------------------|-----------:|-----------:|--------------:|--------------:|
 | Detection sensitivity               | 0.644      | 0.609      | 0.960         | 0.971         |
-| Detection precision                 | 0.655      | 0.648      | 0.702         | 0.740         |
-| Detection F1                        | **0.650**  | 0.628      | **0.811**     | 0.840         |
+| Detection precision                 | 0.655      | 0.650      | 0.702         | 0.740         |
+| Detection F1                        | **0.650**  | 0.629      | **0.811**     | 0.840         |
 | Subscale correct, given detection   | 72.8%      | 76.7%      | 94.1%         | 96.4%         |
 | Sub-item correct, given subscale    | 90.4%      | 93.2%      | 90.0%         | 92.9%         |
 | Perspective correct, given sub-item | 98.7%      | 97.3%      | 98.6%         | 98.3%         |
@@ -76,13 +76,16 @@ fragment-level screening):
 The full architecture detects more consensus-positive fragments than the baseline (2 vs 8 of 25
 missed; a directional result, McNemar p = 0.29 at n = 48) but over-codes within flagged
 subscales, which inflates its weighted sums (bias +5.1 points per fragment). Per-subscale
-precision against the consensus is low for HOP (0.16), SAC (0.19) and SEP (0.13); for HOP and
-SEP this is system error, not rater instability.
+precision against the consensus is low for HOP (0.16), SAC (0.19) and SEP (0.13). For HOP and
+SEP, instability of the majority rule alone does not explain it: precision stays at 0.32 and 0.13
+even when any single rater's endorsement is counted. That does not establish the codings are
+clinically wrong, since a three-rater panel can share a blind spot.
 
 **Construct validity** (GLM-5; 189 sessions; PHQ-8 self-report): Pearson r = 0.492, Spearman
 ρ = 0.475, AUC = 0.702; at the in-sample Youden cut-point sensitivity 0.554 and specificity
 0.805 (leave-one-out: 0.536 / 0.805). Sex-stratified: r = 0.55 (women, n = 87) vs 0.44 (men,
-n = 102), AUC 0.69 vs 0.72; the difference is not significant.
+n = 102), AUC 0.69 vs 0.72, difference −0.03 (95% CI −0.19 to +0.14). The subgroup intervals are
+wide, so these analyses fail to establish a difference rather than establishing equivalence.
 
 ## Prompt set version
 

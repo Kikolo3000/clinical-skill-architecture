@@ -173,7 +173,7 @@ The paper validates the G-G agent in three arms with three different reference s
 | Arm / reference standard | Metric | GLM-5 | Claude Opus 4.6 |
 |---|---|---|---|
 | Synthetic suite v1.1 (90 de-overlapped instances, known ground truth) | clause detection F1 | **0.650** | **0.811** |
-| Synthetic suite v1.0 (all 150 instances) | clause detection F1 | 0.628 | 0.840 |
+| Synthetic suite v1.0 (all 150 instances) | clause detection F1 | 0.629 | 0.840 |
 | Expert arm (48 DAIC-WOZ fragments, blind 3-rater consensus) | fragment screening sensitivity / specificity | 0.92 / 0.74 | — |
 | Expert arm | weighted-sum ICC(2,1) vs consensus | 0.21 | — |
 | Construct validity (189 DAIC-WOZ sessions, PHQ-8 self-report) | Pearson r / AUC | 0.49 / 0.70 | — |
